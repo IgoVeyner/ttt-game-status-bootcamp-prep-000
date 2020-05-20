@@ -63,10 +63,13 @@ def over?(board)
 end
 
 def winner(board)
+<<<<<<< HEAD
   if won?(board) == false 
     return nil
   end
   
+=======
+>>>>>>> daf0a97dba3a92d0c8c0155c7762099030524221
   WIN_COMBINATIONS.any? do |win_combo|
     win_index_1 = win_combo[0]
     win_index_2 = win_combo[1]
@@ -81,7 +84,11 @@ def winner(board)
     elsif  position_1 == "O" && position_2 == "O" && position_3 == "O"
       return "O"
     else
+<<<<<<< HEAD
       false
+=======
+      return nil
+>>>>>>> daf0a97dba3a92d0c8c0155c7762099030524221
     end
   end
 end
